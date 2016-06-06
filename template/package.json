@@ -1,9 +1,10 @@
 {
   "name": "{{ name }}",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "{{ description }}",
   "author": "{{ author }}",
   "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
@@ -18,6 +19,7 @@
   },
   "dependencies": {
     "vue": "^1.0.21",
+    "vue-router": "^0.7.13",
     "babel-runtime": "^6.0.0"
   },
   "devDependencies": {

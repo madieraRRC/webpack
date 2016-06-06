@@ -2,6 +2,13 @@
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
 
+This fork is basically the same as the official but with some minor differences:
+
+* 4-space indentation.
+* Optional comma-dangle when user AirBnb's style guide (it'll warn you instead of erroring out)
+
+And a not-so-minor difference: `vue-router` is included.
+
 ## Documentation
 
 Common topics are discussed in the [docs](http://vuejs-templates.github.io/webpack). Make sure to read it!
