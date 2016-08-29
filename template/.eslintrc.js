@@ -26,6 +26,8 @@ module.exports = {
     {{#if_eq lintConfig "airbnb"}}
     'import/no-unresolved': 0,
     'comma-dangle': [1, 'always'],
+    'no-shadow': 0,
+    'no-param-reassign': 0,
     {{/if_eq}}
     'indent': [2, 4],
     // allow debugger during development
