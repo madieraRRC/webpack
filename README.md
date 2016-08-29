@@ -2,12 +2,12 @@
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
 
-This fork is basically the same as the official but with some minor differences:
+This fork is very much like the official webpack template. Here are the key differences:
 
+* Has `vue-router` for routing.
+* Includes `vuex` for state management.
 * 4-space indentation.
 * Optional comma-dangle when user AirBnb's style guide (it'll warn you instead of erroring out)
-
-And a not-so-minor difference: `vue-router` is included.
 
 ## Documentation
 
