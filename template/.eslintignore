@@ -1,2 +1,5 @@
 build/*.js
 config/*.js
+test/unit/*.js
+test/e2e/*.js
+test/e2e/custom-assertions/*.js
