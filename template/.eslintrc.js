@@ -15,6 +15,16 @@ module.exports = {
   plugins: [
     'html'
   ],
+  {{#if_eq lintConfig "airbnb"}}
+  // check if imports actually resolve
+  'settings': {
+    'import/resolver': {
+      'webpack': {
+        'config': 'build/webpack.base.conf.js'
+      }
+    }
+  },
+  {{/if_eq}}
   // add your custom rules here
   'rules': {
     {{#if_eq lintConfig "standard"}}
@@ -24,11 +34,16 @@ module.exports = {
     'generator-star-spacing': 0,
     {{/if_eq}}
     {{#if_eq lintConfig "airbnb"}}
+    // don't require .vue extension when importing
     'import/no-unresolved': 0,
     'comma-dangle': [1, 'always'],
     'no-shadow': 0,
     'no-param-reassign': 0,
     'new-cap': 0,
+    'import/extensions': ['error', 'always', {
+      'js': 'never',
+      'vue': 'never'
+    }],
     {{/if_eq}}
     'indent': [2, 4],
     // allow debugger during development

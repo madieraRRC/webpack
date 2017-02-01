@@ -2,7 +2,7 @@
 
 An overview of the tools used by this boilerplate for unit testing:
 
-- [Karma](http://karma-runner.github.io/0.13/index.html): the test runner that launches browsers, runs the tests and reports the results to us.
+- [Karma](https://karma-runner.github.io/): the test runner that launches browsers, runs the tests and reports the results to us.
 - [karma-webpack](https://github.com/webpack/karma-webpack): the plugin for Karma that bundles our tests using Webpack.
 - [Mocha](https://mochajs.org/): the test framework that we write test specs with.
 - [Chai](http://chaijs.com/): test assertion library that provides better assertion syntax.
@@ -14,7 +14,7 @@ And the files:
 
 - `index.js`
 
-  This the entry file used by `karma-webpack` to bundle all the test code and source code (for coverage purposes). You can ignore it for the most part.
+  This is the entry file used by `karma-webpack` to bundle all the test code and source code (for coverage purposes). You can ignore it for the most part.
 
 - `specs/`
 
@@ -22,11 +22,11 @@ And the files:
 
 - `karma.conf.js`
 
-  This is the Karma configuration file. See [Karma docs](http://karma-runner.github.io/0.13/index.html) for more details.
+  This is the Karma configuration file. See [Karma docs](https://karma-runner.github.io/) for more details.
 
 ## Running Tests in More Browsers
 
-You can run the tests in multiple real browsers by installing more [karma launchers](http://karma-runner.github.io/0.13/config/browsers.html) and adjusting the `browsers` field in `test/unit/karma.conf.js`.
+You can run the tests in multiple real browsers by installing more [karma launchers](https://karma-runner.github.io/1.0/config/browsers.html) and adjusting the `browsers` field in `test/unit/karma.conf.js`.
 
 ## Mocking Dependencies
 
